@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-purple-400">
+    <div class="quote-box bg-white max-w-screen-md absolute top-1/4 left-1/2 p-10 rounded-xl text-center shadow-xl shadow-slate-400 w-1/2 mb-8">
+        <h2 class="text-3xl mb-10 relative after:content-[''] after:w-20 after:h-1 after:bg-purple-700 after:rounded after:absolute after:-bottom-3.5 after:left-1/2 after:-translate-x-1/2">Quote Of The Day</h2>
+        <blockquote class="text-2xl min-h-28 " id="quote">Loading...</blockquote>
+        <span id="author" class="block mt-3 float-right relative before:content-[''] before:w-5 before:h-1 before:absolute before:top-1/2 before:-left-1/3 before:bg-purple-700">Loading...</span>
+        <div class="w-full mt-14 flex justify-center">
+            <button onclick="getQuote(api_url)">New Quote</button>
+            <button onclick="tweet()" id="btn-another" ><img class="w-6 mr-2" src="https://cdn-icons-png.freepik.com/256/5968/5968958.png?ga=GA1.1.1236349696.1686482087&semt=ais_hybrid" alt="">Tweet</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
