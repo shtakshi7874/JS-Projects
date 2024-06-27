@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display SC", serif;
+}
+.quote-box{
+    transform: translate(-50%);
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+.quote-box button{
+    background: rgb(126, 34, 206);
+    color: wheat;
+    border-radius: 25px;
+    border: 1px solid rgb(126, 34, 206);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#btn-another{
+    background-color: transparent;
+    color: black;
+}
